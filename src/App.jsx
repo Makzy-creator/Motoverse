@@ -9,7 +9,21 @@
 
 // export default App
 
-// import { useEffect } from "react";
+// App.jsx (or your root component)
+// import './App.css'; // Import global CSS file
+
+// function App() {
+//   return (
+//     <div className="scrollbar-none">
+//       {/* Your app content here */}
+//     </div>
+//   );
+// }
+
+
+
+
+
 import {
   Routes,
   Route,
@@ -31,12 +45,15 @@ import ProgressBarSet from "./Components/LandingPage/ProgressBarSet";
 import HowItWorks from "./Components/LandingPage/HowItWorks";
 import Testmonials from "./Components/LandingPage/Testmonials";
 import Team from "./Components/LandingPage/Team";
+import { Theme } from "@radix-ui/themes";
+import "@radix-ui/themes/styles.css"
 
 
 function App() {
  
   return (
-    <Routes>
+    <Theme>
+      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/src/Components/Login.jsx" element={<Frame />} />
       <Route path="/buyer1" element={<Buyer />} />
@@ -55,6 +72,7 @@ function App() {
       <Route path="/Testimonials" element={<Testmonials/>} />
       <Route path="/Team" element={<Team/>} />
    </Routes>
+    </Theme>
   );
 }
 export default App;

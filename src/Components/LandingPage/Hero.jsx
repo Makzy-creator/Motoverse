@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import HeroBg from "./HeroBg";
+// import HeroBg from "./HeroBg";
 import Hero2 from "./Hero2";
 import About from "./About";
 import Products from "./Products";
@@ -7,35 +7,67 @@ import HowItWorks from "./HowItWorks";
 import Testmonials from "./Testmonials";
 import Team from "./Team";
 
+/*
+w-full relative bg-white-100 flex flex-col items-start justify-start leading-[normal] tracking-[normal]
+
+self-stretch bg-[url(/images/.png)] 
+  flex flex-col items-start justify-start pt-0 px-0 pb-[463px] box-border relative gap-[81px] max-w-full text-left text-[80px] text-green-200 font-karla mq450:gap-[20px] mq1125:pb-[301px] mq1125:box-border mq800:gap-[40px] mq800:pb-[196px] mq800:box-border
+
+w-[847px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full
+
+w-[607px] flex flex-col items-start justify-start gap-[40px] max-w-full z-[5] mq800:gap-[20px]
+
+self-stretch flex flex-col items-start justify-start gap-[20px] max-w-full
+
+m-0 self-stretch relative text-inherit tracking-[-0.05em] leading-[90%] font-medium font-inherit mq450:text-[24px] mq450:leading-[29px] mq800:text-[40px] mq800:leading-[43px]
+
+w-[502px] relative text-xl leading-[130%] text-green-0 inline-block max-w-full mq450:text-base mq450:leading-[21px]
+
+self-stretch flex flex-row flex-wrap items-center justify-start gap-[20px] max-w-full text-base text-green-0 font-manrope
+
+relative inline-block min-w-[62px]
+
+
+flex-1 shadow-[0px_4px_16px_rgba(0,_0,_0,_0.05)] rounded bg-green-0 flex flex-row items-center justify-between py-2.5 px-s box-border min-w-[270px] max-w-full gap-[20px] text-black font-karla
+
+relative
+
+
+*/
 
 const Hero = () => {
   return (
-    <div className="w-full relative bg-whitesmoke-100 flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
-      <section className="self-stretch bg-powderblue flex flex-col items-start justify-start pt-0 px-0 pb-[463px] box-border relative gap-[81px] max-w-full text-left text-[80px] text-green-200 font-karla mq450:gap-[20px] mq1125:pb-[301px] mq1125:box-border mq800:gap-[40px] mq800:pb-[196px] mq800:box-border">
-        <HeroBg />
+    <div className="w-full relative bg-white-100 flex flex-col leading-[normal] tracking-[normal]">
+      <section className="overflow-y-scroll scrollbar-none self-stretch bg-[url(/images/Group28.svg)] bg-no-repeat bg-cover bg-contain flex flex-col px-0 pt-0 p-[300px] box-border relative gap-[81px] max-w-full text-left text-[50px] text-green-200 font-Manrope mq450:gap-[20px] mq1125:pb-[301px] mq1125:box-border mq800:gap-[40px] mq800:pb-[196px] mq800:box-border ">
+        {/* <HeroBg /> */}
         <Navbar />
-        <div className="w-[847px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
+        <div className="container flex flex-row align-middle items-start justify-start py-0 px-5 box-border max-w-full">
           <div className="w-[607px] flex flex-col items-start justify-start gap-[40px] max-w-full z-[5] mq800:gap-[20px]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[20px] max-w-full">
-              <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.05em] leading-[90%] font-medium font-inherit mq450:text-[24px] mq450:leading-[29px] mq800:text-[40px] mq800:leading-[43px]">
-                Explore a World of Cars Safely on the Blockchain
+              <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[90%] leading-loose font-medium font-inherit mq450:text-[24px] mq450:leading-[29px] mq800:text-[40px] mq800:leading-[43px]">
+                <span className="block lg:leading-[1.5] leading-tight">Explore a World of </span>
+                <span className="block leading-tight">Cars Safely on the </span>
+                <span className="block leading-tight">Blockchain </span>
               </h1>
               <div className="w-[502px] relative text-xl leading-[130%] text-green-0 inline-block max-w-full mq450:text-base mq450:leading-[21px]">
-                Dive into a decentralized shopping experience where every
-                transaction is transparent, every car has a story, and every
-                deal is sealed with trust.
+                <p>
+                  Dive into a decentralized shopping experience where every
+                  transaction is transparent, every car has a story, and every
+                  deal is sealed with trust.
+                </p>
               </div>
             </div>
-            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[20px] max-w-full text-base text-green-0 font-manrope">
+            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[20px] max-w-full text-base text-green-0 font-manrope text-[16px]">
               <b className="relative inline-block min-w-[62px]">Filter by</b>
-              <div className="flex-1 shadow-[0px_4px_16px_rgba(0,_0,_0,_0.05)] rounded bg-green-0 flex flex-row items-center justify-between py-2.5 px-s box-border min-w-[270px] max-w-full gap-[20px] text-black font-karla">
-                <div className="relative">
-                  search by brand, model, year, etc...
+              <div className="flex-1 shadow-[0px_4px_16px_rgba(0,_0,_0,_0.05)] rounded-5 bg-green-0 flex flex-row items-center justify-between py-2.5 px-s box-border min-w-[270px] max-w-full gap-[20px] text-black font-karla">
+                <div className="relative w-full">
+                  <input type="text" placeholder="search by brand, model, year, etc..." className="h-full w-full outline-none border-none" name="search" id="" />
                 </div>
                 <img
                   className="h-6 w-6 relative overflow-hidden shrink-0"
                   alt=""
-                  src="/magnifyingglass.svg"
+                  // style="cursor"
+                  src="/images/Vector.svg"
                 />
               </div>
             </div>

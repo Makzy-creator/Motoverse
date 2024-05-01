@@ -42,7 +42,7 @@ const ProgressBarSet = ({
                 <div className="!m-[0] absolute top-[calc(50%_-_49.5px)] left-[calc(50%_-_50px)] rounded-l bg-green-0 flex flex-row items-start justify-start py-[26.5px] px-[31px] z-[1]">
                     <b
                         className="relative tracking-[-0.02em] leading-[47px] inline-block min-w-[38px] mq450:text-4xl mq450:leading-[28px] mq800:text-12xl mq800:leading-[37px]"
-                        style={imageGalleryStyle}
+                        style={progressBarSetStyle}
                     >
                         {imageGallery}
                     </b>
@@ -53,7 +53,7 @@ const ProgressBarSet = ({
                 alt=""
                 src={imageillustration}
             />
-            <div className="flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-16 box-border min-w-[285px] min-h-[374px] max-w-full text-blue-700 mq450:pb-[42px] mq450:box-border" style={toggleButtonSetStyle}>
+            <div className="flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-16 box-border min-w-[285px] min-h-[374px] max-w-full text-blue-700 mq450:pb-[42px] mq450:box-border" style={{}}>
                 <div className="self-stretch [filter:drop-shadow(0px_10px_14.2px_rgba(0,_0,_0,_0.04))] rounded-xl flex flex-row items-start justify-start max-w-full" style={cardComponentStyle}>
                     <div className="flex-1 flex flex-col items-start justify-start p-5 box-border gap-[20px] max-w-full">
                         <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[120%] font-bold font-inherit mq450:text-4xl mq450:leading-[28px] mq800:text-12xl mq800:leading-[37px]" style={vehicleValuationStyle}>
