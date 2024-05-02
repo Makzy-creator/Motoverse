@@ -44,7 +44,7 @@ const Hero = () => {
         <div className="container flex flex-row align-middle items-start justify-start py-0 px-5 box-border max-w-full">
           <div className="w-[607px] flex flex-col items-start justify-start gap-[40px] max-w-full z-[5] mq800:gap-[20px]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[20px] max-w-full">
-              <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[90%] leading-loose font-medium font-inherit mq450:text-[24px] mq450:leading-[29px] mq800:text-[40px] mq800:leading-[43px]">
+              <h1 className="m-0 self-stretch relative text-inherit pt-[50px] tracking-[-0.02em] leading-[90%] leading-loose font-medium font-inherit mq450:text-[24px] mq450:leading-[29px] mq800:text-[40px] mq800:leading-[43px]">
                 <span className="block lg:leading-[1.5] leading-tight">Explore a World of </span>
                 <span className="block leading-tight">Cars Safely on the </span>
                 <span className="block leading-tight">Blockchain </span>
