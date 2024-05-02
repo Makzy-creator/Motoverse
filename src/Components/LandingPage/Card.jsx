@@ -1,3 +1,20 @@
+/*
+h-[447px] w-[343px] shadow-[0px_10px_14.2px_rgba(0,_0,_0,_0.04)] rounded-xl overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full text-left text-6xl text-green-900 font-karla
+
+self-stretch flex-1 relative max-w-full overflow-hidden max-h-full
+
+self-stretch flex flex-col items-start justify-start p-5 gap-[20px]
+
+m-0 w-[292px] relative text-inherit tracking-[-0.02em] font-bold font-inherit inline-block mq450:text-xl
+
+
+self-stretch relative text-xl leading-[130%] mq450:text-base mq450:leading-[21px]
+
+*/
+
+
+
+
 
 const Card = ({
     imageillustration,
@@ -5,16 +22,16 @@ const Card = ({
     enjoyPeaceOfMindWithBlock
 }) => {
     return (
-        <div className="h-[447px] w-[343px] shadow-[0px_10px_14.2px_rgba(0,_0,_0,_0.04)] rounded-xl overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full text-left text-6xl text-green-900 font-karla">
+        <div className="rounded-xl overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full text-left text-green-900 font-karla shadow-[0px_10px_14.2px_rgba(0,_0,_0,_0.05)] ">
 
             <img
-                className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full"
+                className="h-[254px] flex-1 relative self-stretch max-w-full overflow-hidden max-h-full"
                 loading="lazy"
-                alt=""
+                alt="Text"
                 src={imageillustration}
             />
-             <div className="self-stretch flex flex-col items-start justify-start p-5 gap-[20px]">
-                <h3 className="m-0 w-[292px] relative text-inherit tracking-[-0.02em] font-bold font-inherit inline-block mq450:text-xl">
+            <div className="self-stretch flex flex-col h-[193px] items-start justify-start p-[20px] gap-[20px]">
+                <h3 className="m-0 w-[292px] text-6xl relative tracking-[-0.02em] font-bold font-inherit inline-block mq450:text-xl">
                     {secureTransactions}
                 </h3>
                 <div className="self-stretch relative text-xl leading-[130%] mq450:text-base mq450:leading-[21px]">

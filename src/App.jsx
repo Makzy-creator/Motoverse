@@ -34,7 +34,6 @@ import Buyer1 from "./Pages/Buyer1";
 import Frame from "./Components/Login";
 import Navbar from "./Components/LandingPage/Navbar";
 import Hero from "./Components/LandingPage/Hero";
-import HeroBg from "./Components/LandingPage/HeroBg";
 import Hero2 from "./Components/LandingPage/Hero2";
 import Page3 from "./Components/LandingPage/Page3";
 import Card from "./Components/LandingPage/Card";
@@ -60,7 +59,6 @@ function App() {
       <Route path="/buyer" element={<Buyer1 />} />
       <Route path="/Navbar" element={<Navbar />} />
       <Route path="/Hero" element={<Hero />} />
-      <Route path="/HeroBg" element={<HeroBg />} />
       <Route path="/Hero2" element={<Hero2 />} />
       <Route path="/Page3" element={<Page3 />} />
       <Route path="/card" element={<Card />} />

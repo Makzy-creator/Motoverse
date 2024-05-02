@@ -161,7 +161,7 @@ const Navbar = () => {
                 <DropdownMenu.Root>
                   {" "}
                   <DropdownMenu.Trigger>
-                    <button className="relative leading-[130%] inline-flex items-center gap-2 min-w-[72px]">
+                    <button className="relative leading-[130%] inline-flex items-center gap-2 min-w-[72px] outline-none border-none">
                       Country <DropdownMenu.TriggerIcon />
                     </button>
                   </DropdownMenu.Trigger>{" "}
@@ -178,7 +178,7 @@ const Navbar = () => {
                 <DropdownMenu.Root>
                   {" "}
                   <DropdownMenu.Trigger>
-                    <button className="relative leading-[130%] inline-flex items-center gap-2 min-w-[72px]">
+                    <button className="relative leading-[130%] inline-flex items-center gap-2 min-w-[72px] outline-none border-none">
                       USDC <DropdownMenu.TriggerIcon />
                     </button>
                   </DropdownMenu.Trigger>{" "}
