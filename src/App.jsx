@@ -28,17 +28,16 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Navbar from "./Components/LandingPage/Navbar";
+import Hero from "./Components/LandingPage/Hero";
 import Home from "./Pages/Home";
 import Buyer from "./Pages/Buyer";
 import Buyer1 from "./Pages/Buyer1";
-import Frame from "./Components/Login";
-import Navbar from "./Components/LandingPage/Navbar";
-import Hero from "./Components/LandingPage/Hero";
 import Hero2 from "./Components/LandingPage/Hero2";
-import Page3 from "./Components/LandingPage/Page3";
 import Card from "./Components/LandingPage/Card";
 import About from "./Components/LandingPage/About";
 import Products from "./Components/LandingPage/Products";
+import CarProducts from "./Components/LandingPage/CarProducts";
 import CarsPage from "./Components/LandingPage/CarsPage";
 import ProgressBarSet from "./Components/LandingPage/ProgressBarSet";
 import HowItWorks from "./Components/LandingPage/HowItWorks";
@@ -46,6 +45,7 @@ import Testmonials from "./Components/LandingPage/Testmonials";
 import Team from "./Components/LandingPage/Team";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css"
+import Login from "./Components/Login";
 
 
 function App() {
@@ -53,14 +53,13 @@ function App() {
   return (
     <Theme>
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/src/Components/Login.jsx" element={<Frame />} />
+      <Route path="/Navbar" element={<Navbar />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/" element={<Hero />} />
+      <Route path="/Home" element={<Home />} />
       <Route path="/buyer1" element={<Buyer />} />
       <Route path="/buyer" element={<Buyer1 />} />
-      <Route path="/Navbar" element={<Navbar />} />
-      <Route path="/Hero" element={<Hero />} />
       <Route path="/Hero2" element={<Hero2 />} />
-      <Route path="/Page3" element={<Page3 />} />
       <Route path="/card" element={<Card />} />
       <Route path="/About" element={<About />} />
       <Route path="/Products" element={<Products />} />
@@ -69,6 +68,7 @@ function App() {
       <Route path="/HowItWorks" element={<HowItWorks />} />
       <Route path="/Testimonials" element={<Testmonials/>} />
       <Route path="/Team" element={<Team/>} />
+      <Route path="/CarProducts" element={<CarProducts/>} />
    </Routes>
     </Theme>
   );

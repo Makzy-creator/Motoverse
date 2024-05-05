@@ -32,7 +32,7 @@ const Testmonials = () => {
                         <div className="w-[292px] relative inline-block">
                             The step-by-step guidance was perfect. I uploaded my car, set the
                             price, and the escrow service made the transaction completely
-                            secure. Highly recommend
+                            secure. I highly recommend.
                         </div>
                         <div className="relative text-blue-700 inline-block min-w-[125px]">
                             Carlos, Argentina

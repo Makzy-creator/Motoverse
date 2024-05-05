@@ -5,6 +5,8 @@ import Products from "./Products";
 import HowItWorks from "./HowItWorks";
 import Testmonials from "./Testmonials";
 import Team from "./Team";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -16,7 +18,7 @@ const Hero = () => {
         <div className="container flex flex-row align-middle items-start justify-start py-0 px-5 box-border max-w-full">
           <div className="w-[607px] flex flex-col items-start justify-start gap-[40px] max-w-full z-[5] mq800:gap-[20px]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[20px] max-w-full">
-              <h1 className="m-0 self-stretch relative text-inherit pt-[80px] tracking-[-0.02em] leading-[90%] leading-loose font-medium font-inherit mq450:text-[24px] mq450:leading-[29px] mq800:text-[40px] mq800:leading-[43px]">
+              <h1 className="m-0 self-stretch relative text-inherit sm:pt-[50px] tracking-[-0.02em] leading-[90%] leading-loose font-medium font-inherit mq450:text-[24px] mq450:leading-[29px] mq800:text-[40px] mq800:leading-[43px]">
                 <span className="block lg:leading-[1.5] leading-tight">Explore a World of </span>
                 <span className="block leading-tight">Cars Safely on the </span>
                 <span className="block leading-tight">Blockchain </span>
@@ -50,40 +52,69 @@ const Hero = () => {
       <About />
       <Products />
       <HowItWorks />
-      <section className="self-stretch bg-kale-900 overflow-hidden flex flex-row items-center justify-between py-[92.2px] px-[133px] box-border max-w-full gap-[20px] text-left text-[64px] text-green-10 font-karla mq800:py-[60px] mq800:px-[33px] mq800:box-border mq1350:flex-wrap mq1350:pl-[66px] mq1350:pr-[66px] mq1350:box-border">
+      <section className="self-stretch bg-kale-900 overflow-hidden align-middle flex flex-row items-center justify-center py-[10px] box-border max-w-full gap-[20px] text-left text-[39px] text-green-10 font-monrope mq800:py-[60px] mq800:px-[33px] mq800:box-border mq1350:flex mq1350:pl-[66px] mq1350:pr-[66px] mq1350:box-border">
         <img
-          className="w-[512px] relative max-h-full object-cover max-w-full mq1350:flex-1"
+          className="w-[500px] h-[500.6px] relative min-h-full max-w-full mq1350:flex"
           loading="lazy"
           alt=""
-          src="/group-27@2x.png"
+          src="/images/Group27.svg"
         />
-        <div className="w-[588px] flex flex-col items-start justify-start gap-[20px] min-w-[588px] max-w-full mq1125:min-w-full mq1350:flex-1">
-          <h1 className="m-0 self-stretch relative text-inherit leading-[97%] font-medium font-inherit mq450:text-[38px] mq450:leading-[37px] mq800:text-[51px] mq800:leading-[50px]">
-            Join Motoverse DAO partnership
+        <div className="h-[284px] flex flex-col items-start justify-center gap-[20px] min-w-[588px] max-w-full mq1125:min-w-full mq1350:flex-1">
+          <h1 className="m-0 self-stretch relative text-inherit leading-[97%] tracking-[0.05em] font-medium font-inherit mq450:text-[38px] mq450:leading-[37px] mq800:text-[51px] mq800:leading-[50px]">
+            {`Join Motoverse's`} <span className="d-block">DAO partnership</span>
           </h1>
-          <div className="self-stretch relative text-xl leading-[130%] mq450:text-base mq450:leading-[21px]">
+          <p className="self-stretch relative text-xl leading-[130%] mq450:text-base mq450:leading-[21px]">
             As a verifier, securely receive your service fee. As a seller, start
             selling your car your way—promote globally, sell quickly. We manage
             paperwork and delivery.
-          </div>
-          <div className="rounded-l bg-green-400 flex flex-row items-center justify-start py-2.5 px-m whitespace-nowrap text-base text-green-0 font-manrope">
-            <div className="relative inline-block min-w-[117px]">
-              Create Account
+          </p>
+          <Link
+            to="/Login"
+            className="rounded-5 bg-green-400 flex flex-row items-center justify-center py-2.5 px-[39.5px] text-left text-base text-green-0 font-manrope"
+          >
+            <div className="relative inline-block min-w-[41px]">Create Account</div>
+          </Link>
+        </div>
+      </section>
+
+      <Testmonials />
+      <Team />
+      
+      {/* <footer className="self-stretch bg-green-1000 overflow-hidden items-start justify-start py-[100px] px-[126px] box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[98px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border">
+        
+        <div className="h-[20px] w-[1190px] py-[50px] max-h-full flex flex-col flex-wrap items-start justify-center box-border max-w-full text-center text-[100px] text-green-100 font-karla mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[98px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border">
+          <div className="flex items-center justify-center">
+            <div className="pl-5">
+              <img
+                className="ml-5"
+                alt=""
+                src="/images/Layer_1.svg"
+              />
+           </div>
+          <div className="flex-1 flex flex-col flex-wrap items-start justify-start gap-[10.5px] min-w-[636px] max-w-full mq1125:min-w-full mq800:gap-[15px]">
+            <div className="w-[927px] relative tracking-[-0.04em] uppercase font-medium inline-block max-w-full mq1125:min-w-full mq800:gap-[15px]">
+              Motoverse
+            </div>
+            <div className="self-stretch items-start justify-end text-[30px] text-green-50 font-manrope ">
+              <h1 className="relative text-inherit tracking-[-0.02em] leading-[47px] font-bold font-inherit">
+                2024 All Right Reserved ©
+              </h1>
             </div>
           </div>
         </div>
-      </section>
-      <Testmonials />
-      <Team />
-      <section className="self-stretch bg-green-1000 overflow-hidden flex flex-row flex-wrap items-start justify-start pt-[150.5px] px-[126px] pb-[120px] box-border gap-[51.5px] max-w-full text-center text-[173.8px] text-green-100 font-karla mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[98px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border">
-        <div className="flex flex-col items-start justify-start pt-[21px] px-0 pb-0">
+      </div>
+    </footer> */}
+
+<footer className="self-stretch bg-green-1000 overflow-hidden flex flex-1 flex-col flex-wrap items-start justify-center pt-[100px] px-[126px] pb-[100px] box-border gap-[51.5px] max-w-full text-center text-[100px] text-green-100 font-karla mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[78px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border h-[264px] w-[1190px] py-[50px] max-h-full  ">
+          
+        <div className="flex items-start justify-start pt-[21px] px-0 pb-0">
           <img
-            className="w-[160.9px] h-[160.9px] relative overflow-hidden shrink-0"
+            className="w-[120px] h-[120px] relative overflow-hidden shrink-0"
             alt=""
-            src="/layer-1-1.svg"
+            src="/images/Layer_1.svg"
           />
         </div>
-        <div className="flex-1 flex flex-col items-start justify-start gap-[30.5px] min-w-[636px] max-w-full mq1125:min-w-full mq800:gap-[15px]">
+        <div className="flex-1 flex flex-col items-start justify-start gap-auto min-w-[636px] max-w-full mq1125:min-w-full mq800:gap-[15px]">
           <div className="w-[927px] relative tracking-[-0.04em] uppercase font-medium inline-block max-w-full mq450:text-[43px] mq800:text-[70px]">
             Motoverse
           </div>
@@ -93,7 +124,9 @@ const Hero = () => {
             </h1>
           </div>
         </div>
-      </section>
+      </footer>
+      
+
 
     </div>
   );
