@@ -43,32 +43,34 @@ export default {
         "142xl": "161px",
         l: "60px",
       },
-    },
-    fontSize: {
-      "20xl": "39px",
-      "4xl": "23px",
-      "12xl": "31px",
-      "6xl": "25px",
-      xl: "20px",
-      base: "16px",
-      "8xl": "27px",
-      inherit: "inherit",
-    },
-    screens: {
-      mq1350: {
-        raw: "screen and (max-width: 1350px)",
+      backgroundImage: {
+      'loading': "lazy"
       },
-      mq1125: {
-        raw: "screen and (max-width: 1125px)",
+      fontSize: {
+        "20xl": "39px",
+        "4xl": "23px",
+        "12xl": "31px",
+        "6xl": "25px",
+        xl: "20px",
+        base: "16px",
+        "8xl": "27px",
+        inherit: "inherit",
       },
-      mq800: {
-        raw: "screen and (max-width: 800px)",
+      screens: {
+        mq1350: {
+          raw: "screen and (max-width: 1350px)",
+        },
+        mq1125: {
+          raw: "screen and (max-width: 1125px)",
+        },
+        mq800: {
+          raw: "screen and (max-width: 800px)",
+        },
+        mq450: {
+          raw: "screen and (max-width: 450px)",
+        },
       },
-      mq450: {
-        raw: "screen and (max-width: 450px)",
-      },
-    },
   },
-}
-// plugins: [],
-// };
+},
+plugins: [],
+};

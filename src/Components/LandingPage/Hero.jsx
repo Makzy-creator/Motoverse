@@ -12,9 +12,10 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="w-full relative bg-white-100 flex flex-col leading-[normal] tracking-[normal]">
+    <div className="w-full relative bg-white-100 flex flex-col leading-[normal] tracking-[normal]"> 
+     <Navbar />
       <section className="overflow-y-scroll scrollbar-none self-stretch bg-[url(/images/Group28.svg)] bg-no-repeat bg-cover bg-contain flex flex-col px-0 pt-0 p-[120px] pb-[300px] box-border relative gap-[81px] max-w-full text-left text-[50px] text-green-200 font-Manrope mq450:gap-[20px] mq1125:pb-[301px] mq1125:box-border mq800:gap-[40px] mq800:pb-[196px] mq800:box-border ">
-        <Navbar />
+      
         <div className="container flex flex-row align-middle items-start justify-start py-0 px-5 box-border max-w-full">
           <div className="w-[607px] flex flex-col items-start justify-start gap-[40px] max-w-full z-[5] mq800:gap-[20px]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[20px] max-w-full">
@@ -38,10 +39,10 @@ const Hero = () => {
                   <input type="text" placeholder="search by brand, model, year, etc..." className="h-full w-full outline-none border-none" name="search" id="" />
                 </div>
                 <img
-                  className="h-6 w-6 relative overflow-hidden shrink-0"
+                  className="cursor-pointer h-6 w-6 relative overflow-hidden shrink-0"
                   alt=""
-                  // style="cursor"
                   src="/images/Vector.svg"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -79,55 +80,28 @@ const Hero = () => {
 
       <Testmonials />
       <Team />
-      
-      {/* <footer className="self-stretch bg-green-1000 overflow-hidden items-start justify-start py-[100px] px-[126px] box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[98px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border">
-        
-        <div className="h-[20px] w-[1190px] py-[50px] max-h-full flex flex-col flex-wrap items-start justify-center box-border max-w-full text-center text-[100px] text-green-100 font-karla mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[98px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border">
-          <div className="flex items-center justify-center">
-            <div className="pl-5">
-              <img
-                className="ml-5"
-                alt=""
-                src="/images/Layer_1.svg"
-              />
-           </div>
-          <div className="flex-1 flex flex-col flex-wrap items-start justify-start gap-[10.5px] min-w-[636px] max-w-full mq1125:min-w-full mq800:gap-[15px]">
-            <div className="w-[927px] relative tracking-[-0.04em] uppercase font-medium inline-block max-w-full mq1125:min-w-full mq800:gap-[15px]">
-              Motoverse
-            </div>
-            <div className="self-stretch items-start justify-end text-[30px] text-green-50 font-manrope ">
-              <h1 className="relative text-inherit tracking-[-0.02em] leading-[47px] font-bold font-inherit">
-                2024 All Right Reserved ©
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer> */}
 
-<footer className="self-stretch bg-green-1000 overflow-hidden flex flex-1 flex-col flex-wrap items-start justify-center pt-[100px] px-[126px] pb-[100px] box-border gap-[51.5px] max-w-full text-center text-[100px] text-green-100 font-karla mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[78px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border h-[264px] w-[1190px] py-[50px] max-h-full  ">
+<footer className="self-stretch bg-green-1000 overflow-hidden flex flex-1 flex-row flex-wrap items-center justify-center p-[120px] box-border max-w-full text-center text-green-100 font-karla mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[78px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border h-[264px] w-[1190px] py-[50px] max-h-full ">
           
-        <div className="flex items-start justify-start pt-[21px] px-0 pb-0">
+        <div className="flex items-start justify-start">
           <img
-            className="w-[120px] h-[120px] relative overflow-hidden shrink-0"
+            className="w-[160px] h-[160px] relative"
             alt=""
-            src="/images/Layer_1.svg"
+            src="/images/newlogo.svg"
           />
         </div>
         <div className="flex-1 flex flex-col items-start justify-start gap-auto min-w-[636px] max-w-full mq1125:min-w-full mq800:gap-[15px]">
-          <div className="w-[927px] relative tracking-[-0.04em] uppercase font-medium inline-block max-w-full mq450:text-[43px] mq800:text-[70px]">
+          <div className="w-[927px] text-[120px] relative tracking-[-0.04em] uppercase font-medium inline-block max-w-full mq450:text-[43px] mq800:text-[70px]">
             Motoverse
           </div>
-          <div className="self-stretch flex flex-row items-start justify-end text-left text-20xl text-green-50">
+          <div className="self-stretch flex items-start md:justify-end justify-center text-left text-20xl text-green-50">
             <h1 className="m-0 relative text-inherit tracking-[-0.02em] leading-[47px] font-bold font-inherit mq450:text-4xl mq450:leading-[28px] mq800:text-12xl mq800:leading-[37px]">
               2024 All Right Reserved ©
             </h1>
           </div>
         </div>
       </footer>
-      
-
-
+    
     </div>
   );
 };

@@ -25,6 +25,7 @@ const HowItWorks = () => {
                             enjoyPeaceOfMindWithBlock="Buyers show interest through a secure escrow smart contract, ensuring safe transaction terms."
                             propPadding="0px 2px 0px 0px"
                             propMinHeight="311px"
+                            propMinWidth="48px"
                             propPadding1="0px 0px 126px"
                             propFilter="unset"
                             propBoxShadow="0px 10px 14.2px rgba(0, 0, 0, 0.05)"
@@ -38,7 +39,7 @@ const HowItWorks = () => {
                             vehicleValuationVerificat={`Close & Collect`}
                             enjoyPeaceOfMindWithBlock="We handle the paperwork and delivery. Once everything's finalized, receive your payment seamlessly and securely."
                             propPadding="unset"
-                            // propMinWidth="48px"
+                            propMinWidth="48px"
                             propMinHeight="unset"
                             propPadding1="126.1px 0px 0px"
                             propFilter="unset"

@@ -37,7 +37,6 @@ import Hero2 from "./Components/LandingPage/Hero2";
 import Card from "./Components/LandingPage/Card";
 import About from "./Components/LandingPage/About";
 import Products from "./Components/LandingPage/Products";
-import CarProducts from "./Components/LandingPage/CarProducts";
 import CarsPage from "./Components/LandingPage/CarsPage";
 import ProgressBarSet from "./Components/LandingPage/ProgressBarSet";
 import HowItWorks from "./Components/LandingPage/HowItWorks";
@@ -46,6 +45,14 @@ import Team from "./Components/LandingPage/Team";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css"
 import Login from "./Components/Login";
+import FrameComponent from "./Components/FrameComponent";
+import FrameComponent1 from "./Components/FrameComponent1";
+import Password from "./Components/Password";
+import CreateIdentity from "./Pages/CreateIdentity/CreateIdentity";
+import Attention from "./Pages/CreateIdentity/Attention";
+import BackupPhrase from "./Pages/CreateIdentity/BackupPhrase";
+import BackupPhraseNext from "./Pages/CreateIdentity/BackupPhraseNext";
+import BackupPhrase3 from "./Pages/CreateIdentity/BackupPhrase3";
 
 
 function App() {
@@ -57,7 +64,8 @@ function App() {
       <Route path="/Login" element={<Login />} />
       <Route path="/" element={<Hero />} />
       <Route path="/Home" element={<Home />} />
-      <Route path="/buyer1" element={<Buyer />} />
+      <Route path="/Password" element={<Password />} />
+      <Route path="/Buyer1" element={<Buyer />} />
       <Route path="/buyer" element={<Buyer1 />} />
       <Route path="/Hero2" element={<Hero2 />} />
       <Route path="/card" element={<Card />} />
@@ -68,7 +76,13 @@ function App() {
       <Route path="/HowItWorks" element={<HowItWorks />} />
       <Route path="/Testimonials" element={<Testmonials/>} />
       <Route path="/Team" element={<Team/>} />
-      <Route path="/CarProducts" element={<CarProducts/>} />
+      <Route path="/FrameComponent" element={<FrameComponent/>} />
+      <Route path="/FrameComponent1" element={<FrameComponent1/>} />
+      <Route path="/CreateIdentity" element={<CreateIdentity/>} />
+      <Route path="/Attention" element={<Attention/>} />
+      <Route path="/BackupPhrase" element={<BackupPhrase/>} />
+      <Route path="/BackupPhraseNext" element={<BackupPhraseNext/>} />
+      <Route path="/BackupPhrase3" element={<BackupPhrase3/>} />
    </Routes>
     </Theme>
   );

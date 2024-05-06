@@ -1,7 +1,7 @@
 
-
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login = ({ onClose }) => {
   const navigate = useNavigate();
@@ -16,18 +16,15 @@ const Login = ({ onClose }) => {
 
   return (
     <>
-      <div className="m-0 w-[585px] h-[693px] bg-green-0 rounded-2xl flex flex-col items-center justify-center pt-0 px-0 pb-10 box-border gap-[40px] leading-[normal] tracking-[normal]max-w-full max-h-full overflow-auto mq293:gap-[20px] shadow-[10px_10px_14.2px_rgba(0,_0,_0,_0.07)] overflow-hidden">
-        <div className="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-5 box-border max-w-full">
-          <div className="flex-1 flex flex-row items-start justify-start opacity-0 max-w-full">
-          </div>
-        </div>
-        <section className="self-stretch flex flex-row align-middle items-start justify-center pt-[60px] px-5 box-border max-w-full text-center text-20xl text-green-900 font-manrope">
-          <div className="w-[400px] items-start justify-start gap-[12px] max-w-full">
-            <div className="self-stretch h-[300px] relative">
+      <div className="w-[585px] h-[693px] bg-green-0 rounded-2xl flex flex-col items-center justify-center p-0 px-0 pb-10 box-border gap-[40px] leading-[normal] tracking-[normal]max-w-full max-h-full mq293:gap-[20px] shadow-[10px_10px_14.2px_rgba(0,_0,_0,_0.07)] overflow-hidden">
+        <section className="self-stretch flex flex-col items-center justify-center px-5 box-border max-w-full text-center text-20xl text-green-900 font-manrope">
+          <div className="w-[400px] gap-[12px] max-w-full">
+            <div className="">
               <img
-                className="absolute max-w-full max-h-full object-contain z-[1]"
+                className="relative rounded-5 inline-block object-contain"
                 alt=""
                 src="/images/Key-Login.svg"
+                loading="lazy"
               />
             </div>
             <div className="self-stretch flex flex-row items-start justify-center px-5">
@@ -47,19 +44,31 @@ const Login = ({ onClose }) => {
           <div className="flex flex-col items-start justify-start gap-[20px]
 ">
             <div
-              className="rounded-5 bg-[#3D6470] flex flex-row items-start justify-start py-2.5 px-[50px] whitespace-nowrap cursor-pointer"
-              onClick={onFrameContainerClick}
-            >
-              <div className="relative inline-block min-w-[111px]">
-                Create Identity
-              </div>
-            </div>
-            <div
-              className="rounded-5 flex flex-row items-start justify-start py-2 px-[19px] whitespace-nowrap cursor-pointer text-green-900 border-[1px] border-solid border-[#3D6470]"
+              className="rounded-full bg-[#3D6470] flex flex-row items-start justify-start py-2.5 px-[50px] whitespace-nowrap cursor-pointer"
               onClick={onFrameContainer1Click}
             >
-              <div className="relative">Import Existing Identity</div>
+              <Link
+                to="/CreateIdentity"
+                className=""
+                target="blanc"
+              >
+                <p className="relative inline-block min-w-[41px]">Create Identity</p>
+              </Link>
             </div>
+
+            <div
+              className="rounded-full flex flex-row items-start justify-start py-2.5 px-[19px] whitespace-nowrap cursor-pointer text-green-900 border-[1px] border-solid border-[#3D6470]"
+              onClick={onFrameContainerClick}
+            >
+              <Link
+                to="/Home"
+                className=""
+                target="blanc"
+              >
+                <p className="relative inline-block min-w-[41px]">Import Existing Identity</p>
+              </Link>
+            </div>
+
           </div>
         </section>
       </div>

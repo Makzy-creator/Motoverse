@@ -1,7 +1,4 @@
 import { useMemo } from "react";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 const CarsPage = ({ image14, mapPin, location1, propMinWidth }) => {
   const locationStyle = useMemo(() => {
@@ -9,14 +6,6 @@ const CarsPage = ({ image14, mapPin, location1, propMinWidth }) => {
       minWidth: propMinWidth,
     };
   }, [propMinWidth]);
-
-//   const settings = {
-//     dots: false,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1
-// };
 
   return (
     <div className="w-[284.3px] shadow-[0px_10px_14.2px_rgba(0,_0,_0,_0.04)] rounded-xl bg-green-0 overflow-hidden shrink-0 flex flex-col items-start justify-start text-left text-base text-green-900 font-manrope">

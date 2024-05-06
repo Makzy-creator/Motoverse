@@ -1,16 +1,47 @@
 import CarsPage from "./CarsPage"
 import { Link } from "react-router-dom";
-// import { Carousel } from 'react-responsive-carousel';
-// import 'react-responsive-carousel/lib/styles/carousel.min.css';
-// import { useRef, useEffect } from 'react'; 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const Products = () => {
-
-   
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      };
 
     return (
-
         <section className="self-stretch bg-white-50 overflow-hidden flex flex-col items-center justify-start py-[120px] px-[120px] box-border relative gap-[60px] max-w-full text-left text-20xl text-green-900 font-karla mq450:pt-[51px] mq450:pb-[51px] mq450:box-border mq1125:pt-[78px] mq1125:pb-[78px] mq1125:box-border mq800:gap-[30px]">
 
             {/* ..................Heading start................. */}
@@ -28,9 +59,8 @@ const Products = () => {
                 </Link>
             </div>
             {/* ..................Heading End................. */}
-            <button
+            {/* <button
                 className="cursor-pointer"
-               // Navigate to next slide
             >
                 <img
                     className="w-16 h-16 absolute !m-[0] right-[61px] bottom-[347px] overflow-hidden shrink-0 z-[1]"
@@ -38,51 +68,53 @@ const Products = () => {
                     alt=""
                     src="/images/CaretCircleRight.svg"
                 />
-            </button>
+            </button> */}
+
 
             {/* ..................Car-card start................. */}
 
-
-
             <div className="w-[1197.1px] overflow-hidden flex flex-col items-start justify-start gap-[40px] max-w-full text-base font-manrope mq800:gap-[20px]">
 
-                <div className="w-[1197.1px] overflow-hidden flex flex-row items-start justify-start gap-[20px] max-w-full">
-                    
-                    
+                <div className="slider-container w-[1197.1px] overflow-hidden flex flex-row items-start justify-start gap-[20px] max-w-full">
 
-                            <CarsPage
+                        <Slider {...settings}>
+                            <div>
+                                <CarsPage
                                 image14="/images/car1.svg"
                                 mapPin="/images/MapPin.svg"
                                 location1="Salta"
-                            />
+                                />
                         
-                    
-                            <CarsPage
-                                image14="/images/car2.svg"
-                                mapPin="/images/MapPin.svg"
-                                location1="La Plata"
-                                propMinWidth="62px"
-                            />
-                        
-
-                    
-                            <CarsPage
-                                image14="/images/car3.svg"
-                                mapPin="/images/MapPin.svg"
-                                location1="Buenos Aires"
-                                propMinWidth="101px"
-                            />
-                        
-
-                    
-                            <CarsPage
+                            </div>
+                            
+                            <div>
+                                 <CarsPage
+                                    image14="/images/car2.svg"
+                                    mapPin="/images/MapPin.svg"
+                                    location1="La Plata"
+                                    propMinWidth="62px"
+                                />
+                            </div>
+                            
+                        <div>
+                                <CarsPage
+                                    image14="/images/car3.svg"
+                                    mapPin="/images/MapPin.svg"
+                                    location1="Buenos Aires"
+                                    propMinWidth="101px"
+                                />
+                        </div>
+                            
+                            <div>
+                                <CarsPage
                                 image14="/images/car4.svg"
                                 mapPin="/images/MapPin.svg"
                                 location1="Buenos Aires"
                                 propMinWidth="101px"
-                            />
+                                />
+                            </div>
                         
-
+                        </Slider>
                     
                 </div>
                 {/* ..................Car-card ends................. */}
