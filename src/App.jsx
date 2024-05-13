@@ -61,6 +61,10 @@ import SuccessPage from "./Pages/CreateIdentity/SuccessPage";
 import VehicleVerifier1 from "./Pages/VehicleVerifier/VehicleVerifier1";
 import Application from "./Pages/VehicleVerifier/Application";
 import Credentials from "./Pages/VehicleVerifier/Credentials";
+import Credentials1 from "./Pages/VehicleVerifier/Credentials1";
+import Experience from "./Pages/VehicleVerifier/Experience";
+import Reference from "./Pages/VehicleVerifier/Reference";
+import Success from "./Pages/VehicleVerifier/Success";
 
 
 function App() {
@@ -99,6 +103,10 @@ function App() {
       <Route path="/VehicleVerifier1" element={<VehicleVerifier1/>} />
       <Route path="/Application" element={<Application/>} />
       <Route path="/Credentials" element={<Credentials/>} />
+      <Route path="/Credentials1" element={<Credentials1/>} />
+      <Route path="/Experience" element={<Experience/>} />
+      <Route path="/Reference" element={<Reference/>} />
+      <Route path="/Success" element={<Success/>} />
    </Routes>
     </Theme>
   );

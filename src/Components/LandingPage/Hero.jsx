@@ -32,7 +32,7 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[20px] max-w-full text-base text-green-0 font-manrope text-[16px]">
+            <div className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[20px] max-w-full text-base text-green-0 font-manrope">
               <b className="relative inline-block min-w-[62px]">Filter by</b>
               <div className="flex-1 shadow-[0px_4px_16px_rgba(0,_0,_0,_0.05)] rounded-5 bg-green-0 flex flex-row items-center justify-between py-2.5 px-s box-border min-w-[270px] max-w-full gap-[20px] text-black font-karla">
                 <div className="relative w-full">

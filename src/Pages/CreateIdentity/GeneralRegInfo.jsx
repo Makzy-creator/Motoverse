@@ -1,5 +1,5 @@
 import Navbar from "../../Components/LandingPage/Navbar";
-import { Form } from "react-bootstrap";
+// import { Form } from "react-bootstrap";
 import { useState, useCallback } from "react";
 import PortalPopup from "../../Components/PortalPopup";
 import Frame from "../../Components/Login";
@@ -29,9 +29,9 @@ const GeneralRegInfo = () => {
           <div className="w-[1189px] flex flex-row items-start justify-center pt-[43px] pb-0 px-5 box-border max-w-full">
             <div className="w-[585px] flex flex-col items-start justify-start pt-0 px-0 pb-10 box-border gap-[60px] max-w-full  mq675:gap-[30px]">
               {/* Progress bar starts */}
-              <div className="self-stretch h-3 rounded-full bg-gainsboro flex flex-row items-start justify-start gap-[56px] max-w-full mq450:gap-[28px]">
-                <div className="self-stretch w-[585px] relative rounded-full bg-gainsboro hidden max-w-full" />
-                <div className="self-stretch w-[455px] relative rounded-full bg-blue-700 max-w-full z-[1]" />
+              <div className="self-stretch h-3 rounded-full bg-[#D9D9D9] flex flex-row items-start justify-start gap-[56px] max-w-full mq450:gap-[28px]">
+                <div className="self-stretch w-[585px] relative rounded-full bg-[#D9D9D9] hidden max-w-full" />
+                <div className="self-stretch w-[455px] relative rounded-full bg-[#4D28FF] bg-100% max-w-full z-[1]" />
               </div>
               {/* progress bar ends */}
 
@@ -55,8 +55,8 @@ const GeneralRegInfo = () => {
                     <b className="self-stretch relative">Name</b>
                   </div>
                   <div className="self-stretch flex flex-row items-start justify-start md:gap-[10px] gap-[15px] max-w-full w-[585px] h-[48px]">
-                    <div className="self-stretch rounded-xl bg-green-10 flex-1 flex flex-row flex-wrap items-center justify-between gap-[20px]">
-                      <Form className="flex flex-row items-center justify-center md:w-[282.5px] w-[270px] h-[24px]">
+                    <div className="self-stretch rounded-xl bg-[#E7E7F1] bg-100% flex-1 flex flex-row flex-wrap items-center justify-between gap-[20px]">
+                      <div className="flex flex-row items-center justify-center md:w-[282.5px] w-[270px] h-[24px]">
                         <div className="relative w-full">
                           <input
                             type="text"
@@ -66,10 +66,10 @@ const GeneralRegInfo = () => {
                             id=""
                           />
                         </div>
-                      </Form>
+                      </div>
                     </div>
-                    <div className="self-stretch w-[282.5px] h-[48px] rounded-xl bg-green-10 flex-1 flex flex-row flex-wrap items-center justify-between">
-                      <Form className="flex flex-row items-center justify-center md:w-[282.5px] w-[270px] h-[24px] ">
+                    <div className="self-stretch w-[282.5px] h-[48px] rounded-xl bg-[#E7E7F1] bg-100% flex-1 flex flex-row flex-wrap items-center justify-between">
+                      <div className="flex flex-row items-center justify-center md:w-[282.5px] w-[270px] h-[24px] ">
                         <div className="relative w-full">
                           <input
                             type="text"
@@ -79,7 +79,7 @@ const GeneralRegInfo = () => {
                             id=""
                           />
                         </div>
-                      </Form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -91,8 +91,8 @@ const GeneralRegInfo = () => {
                     <b className="self-stretch relative">Address</b>
                   </div>
                   <div className="self-stretch flex flex-row items-start justify-start gap-[40px] max-w-full w-[585px] h-[48px] ">
-                    <div className="self-stretch w-[585px] h-[48px] rounded-xl bg-green-10 flex-1 flex flex-row flex-wrap items-center justify-between gap-[20px]">
-                      <Form className="flex flex-row items-center justify-start w-[561px] h-[24px]">
+                    <div className="self-stretch w-[585px] h-[48px] rounded-xl bg-[#E7E7F1] bg-100% flex-1 flex flex-row flex-wrap items-center justify-between gap-[20px]">
+                      <div className="flex flex-row items-center justify-start w-[561px] h-[24px]">
                         <div className="relative w-full">
                           <input
                             type="text"
@@ -102,7 +102,7 @@ const GeneralRegInfo = () => {
                             id=""
                           />
                         </div>
-                      </Form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -115,8 +115,8 @@ const GeneralRegInfo = () => {
                   </div>
 
                   <div className="self-stretch flex flex-row items-start justify-start gap-[40px] max-w-full w-[585px] h-[48px]">
-                    <div className="self-stretch w-[585px] h-[48px] rounded-xl bg-green-10 flex-1 flex flex-row items-center justify-between gap-[20px]">
-                      <Form className="self-stretch flex flex-row items-center justify-end">
+                    <div className="self-stretch w-[585px] h-[48px] rounded-xl bg-[#E7E7F1] bg-100% flex-1 flex flex-row items-center justify-between gap-[20px]">
+                      <div className="self-stretch flex flex-row items-center justify-end">
                         <div className="relative max-w-full py-3 pr-6 pl-3 w-[515px]">
                           <input
                             type="text"
@@ -126,7 +126,7 @@ const GeneralRegInfo = () => {
                             id=""
                           />
                         </div>
-                      </Form>
+                      </div>
                       <div className="flex flex-row items-center justify-start pr-[2px] md:pr-[24px]">
                         <DropdownMenu.Root>
                           {" "}
@@ -159,8 +159,8 @@ const GeneralRegInfo = () => {
                       <b className="self-stretch relative">Country Code</b>
                     </div>
                     <div className="self-stretch flex flex-row items-start justify-start gap-[20px] max-w-full">
-                      <div className="self-stretch md:w-[278px] w-[265.5px] h-[48px] rounded-xl bg-green-10 flex-1 flex flex-row flex-wrap items-center justify-between text-grey-500 cursor-pointer">
-                        <Form className="flex flex-row items-center justify-start h-[24px]">
+                      <div className="self-stretch md:w-[278px] w-[265.5px] h-[48px] rounded-xl bg-[#E7E7F1] bg-100% flex-1 flex flex-row flex-wrap items-center justify-between text-grey-500 cursor-pointer">
+                        <div className="flex flex-row items-center justify-start h-[24px]">
                           <div className="relative max-w-full py-3 pr-6 pl-3 ">
                             <input
                               type="text"
@@ -170,7 +170,7 @@ const GeneralRegInfo = () => {
                               id=""
                             />
                           </div>
-                        </Form>
+                        </div>
                         <div className="flex flex-row items-center justify-start md:pr-[24px] lg:pr-[20px]">
                           <DropdownMenu.Root>
                             {" "}
@@ -203,8 +203,8 @@ const GeneralRegInfo = () => {
                       </b>
                     </div>
 
-                    <div className="self-stretch md:w-[278px] w-[265.5px] h-[48px] rounded-xl bg-green-10 flex-1 flex flex-row flex-wrap items-center justify-between text-grey-500 cursor-pointer">
-                      <Form className="flex flex-row items-center justify-start h-[48px] ">
+                    <div className="self-stretch md:w-[278px] w-[265.5px] h-[48px] rounded-xl bg-[#E7E7F1] bg-100% flex-1 flex flex-row flex-wrap items-center justify-between text-grey-500 cursor-pointer">
+                      <div className="flex flex-row items-center justify-start h-[48px] ">
                         <div className="relative max-w-full py-3 pr-6 pl-3">
                           <input
                             type="text"
@@ -214,7 +214,7 @@ const GeneralRegInfo = () => {
                             id=""
                           />
                         </div>
-                      </Form>
+                      </div>
                     </div>
                   </div>
                   {/* phone number ends */}
@@ -222,7 +222,7 @@ const GeneralRegInfo = () => {
                 {/*  Form Ends*/}
               </div>
             </div>
-
+                              
             {/* main section ends */}
           </div>
 

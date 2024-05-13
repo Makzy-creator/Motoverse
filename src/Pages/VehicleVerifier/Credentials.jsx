@@ -9,16 +9,16 @@ const Credentials = () => {
     const navigate = useNavigate();
 
   const onFrameContainer1Click = useCallback(() => {
-    navigate("/GeneralRegInfo");
+    navigate("/Application");
   }, [navigate]);
 
   const onFrameContainerClick = useCallback(() => {
-    navigate("/SuccessPage");
+    navigate("/Credentials1");
   }, [navigate]);
   return (
     <div className="w-[1440px] h-[1024px] max-w-full">
       <Navbar />
-      <div className="self-stretch w-[585px] h-[541px] flex flex-col items-center justify-center mt-[43px] max-w-full mb-[276px] mx-[427px] font-manrope text-center text-20xl text-green-900 font-text mq675:gap-[21px] ">
+      <div className="self-stretch flex flex-col items-center pt-[43px] px-[114px] justify-start max-w-full font-manrope text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
         {/* progress line starts */}
         <div className="self-stretch flex flex-col items-center justify-center max-w-full text-center text-xl text-black font-text mq750:gap-[21px]">
           <div className="w-[1189px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
@@ -66,7 +66,7 @@ const Credentials = () => {
             className="rounded-full  flex flex-row items-start justify-start py-2.5 px-[54.5px] cursor-pointer border-[1px] border-solid border-[#3D6470]  whitespace-nowrap"
             onClick={onFrameContainer1Click}
           >
-            <Link to="/GeneralRegInfo" className="" target="blanc">
+            <Link to="/Application" className="" target="blanc">
               <p className="relative inline-block min-w-[52px]">Cancel</p>
             </Link>
           </div>
@@ -75,7 +75,7 @@ const Credentials = () => {
             className="rounded-full bg-[#3D6470] bg-[100%] text-white flex text-center items-center justify-center py-2.5 px-[54.5px] cursor-pointer border-[1px] border-solid border-[#3D6470] whitespace-nowrap"
             onClick={onFrameContainerClick}
           >
-            <Link to="/SuccessPage" className="" target="blanc">
+            <Link to="/Credentials1" className="" target="blanc">
               <p className="relative inline-block min-w-[51px]">Next</p>
             </Link>
           </div>
