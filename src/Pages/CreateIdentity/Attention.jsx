@@ -9,12 +9,12 @@ const Attention = () => {
     const navigate = useNavigate();
 
     const onFrameContainer1Click = useCallback(() => {
-        navigate("/Attention");
+        navigate("/BackupPhrase");
     }, [navigate]);
     return (
         <div>
             <Navbar />
-            <div className="w-[1200px] flex flex-col items-start pt-[43px] justify-start gap-[43px] max-w-full text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
+            <div className="w-[1200px] flex flex-col items-start pt-[43px] justify-start gap-[43px] max-w-full font-manrope text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
 
                 {/* progress line starts */}
                 <div className="self-stretch flex flex-col items-start justify-start gap-[43px] max-w-full text-center text-xl text-black font-text mq750:gap-[21px]">
@@ -27,7 +27,7 @@ const Attention = () => {
                 </div>
                 {/* progress line ends */}
 
-                <section className="w-[1189px] flex flex-col items-center justify-center max-w-full text-center text-20xl text-green-900 font-text">
+                <section className="w-[1440px] flex flex-col items-center justify-center max-w-full text-center text-20xl text-green-900 font-text pb-[185px]">
                     <div className="w-[585px] flex flex-col items-start justify-start gap-[12px] max-w-full">
                         <div className="self-stretch flex flex-col items-center justify-center py-0 px-5">
                             <img

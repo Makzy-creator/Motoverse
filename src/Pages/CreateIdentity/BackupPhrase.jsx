@@ -13,7 +13,7 @@ const BackupPhrase = () => {
     return (
         <div className="">
             <Navbar />
-            <div className="w-[1200px] flex flex-col items-start pt-[43px] justify-start gap-[43px] max-w-full text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
+            <div className="w-[1200px] flex flex-col items-start pt-[43px] justify-start gap-[43px] max-w-full font-manrope text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
                 {/* progress line starts */}
                 <div className="self-stretch flex flex-col items-start justify-start gap-[43px] max-w-full text-center text-xl text-black font-text mq750:gap-[21px]">
                     <div className="w-[1189px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">

@@ -12,7 +12,7 @@ const CreateIdentity = () => {
   return (
     <div>
     <Navbar/>
-      <div className="w-full relative bg-white-50 overflow-hidden flex flex-col items-center justify-center pt-[43px] pb-[120px] pr-[114px] pl-[126px] box-border gap-[60px] leading-[normal] tracking-[normal] mq450:gap-[15px] mq450:pl-5 mq450:pr-5 mq450:box-border mq750:gap-[30px] mq750:pl-[63px] mq750:pr-[57px] mq750:box-border">
+      <div className="w-full relative bg-white-50 overflow-hidden flex flex-col items-center font-manrope justify-center pt-[43px] pb-[120px] pr-[114px] pl-[126px] box-border gap-[60px] leading-[normal] tracking-[normal] mq450:gap-[15px] mq450:pl-5 mq450:pr-5 mq450:box-border mq750:gap-[30px] mq750:pl-[63px] mq750:pr-[57px] mq750:box-border">
 
         {/* progress line starts */}
         <div className="self-stretch flex flex-col items-start justify-start gap-[43px] max-w-full text-center text-xl text-black font-text mq750:gap-[21px]">
@@ -25,7 +25,7 @@ const CreateIdentity = () => {
       </div>
         {/* progress line ends */}
 
-      <section className="w-[1189px] flex flex-col items-center justify-center max-w-full text-center text-20xl text-green-900 font-text">
+      <section className="w-[1189px] flex flex-col font-manrope items-center justify-center max-w-full text-center text-20xl text-green-900 font-text">
         <div className="w-[585px] flex flex-col items-start justify-start gap-[12px] max-w-full">
           <div className="self-stretch flex flex-col items-center justify-center py-0 px-5">
             <img 

@@ -30,7 +30,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./Components/LandingPage/Navbar";
 import Hero from "./Components/LandingPage/Hero";
-import Home from "./Pages/Home";
+import Home from "./Pages/ImportIdentity/Home";
 import Buyer from "./Pages/Buyer";
 import Buyer1 from "./Pages/Buyer1";
 import Hero2 from "./Components/LandingPage/Hero2";
@@ -53,6 +53,14 @@ import Attention from "./Pages/CreateIdentity/Attention";
 import BackupPhrase from "./Pages/CreateIdentity/BackupPhrase";
 import BackupPhraseNext from "./Pages/CreateIdentity/BackupPhraseNext";
 import BackupPhrase3 from "./Pages/CreateIdentity/BackupPhrase3";
+import CreateNewPassword from "./Pages/CreateIdentity/CreateNewPassword";
+import CompleteNewPassword from "./Pages/CreateIdentity/CompleteNewPassword";
+import GeneralRegInfo from "./Pages/CreateIdentity/GeneralRegInfo";
+import UploadDocument from "./Pages/CreateIdentity/UploadDocument";
+import SuccessPage from "./Pages/CreateIdentity/SuccessPage";
+import VehicleVerifier1 from "./Pages/VehicleVerifier/VehicleVerifier1";
+import Application from "./Pages/VehicleVerifier/Application";
+import Credentials from "./Pages/VehicleVerifier/Credentials";
 
 
 function App() {
@@ -83,6 +91,14 @@ function App() {
       <Route path="/BackupPhrase" element={<BackupPhrase/>} />
       <Route path="/BackupPhraseNext" element={<BackupPhraseNext/>} />
       <Route path="/BackupPhrase3" element={<BackupPhrase3/>} />
+      <Route path="/CreateNewPassword" element={<CreateNewPassword/>} />
+      <Route path="/CompleteNewPassword" element={<CompleteNewPassword/>} />
+      <Route path="/GeneralRegInfo" element={<GeneralRegInfo/>} />
+      <Route path="/UploadDocument" element={<UploadDocument/>} />
+      <Route path="/SuccessPage" element={<SuccessPage/>} />
+      <Route path="/VehicleVerifier1" element={<VehicleVerifier1/>} />
+      <Route path="/Application" element={<Application/>} />
+      <Route path="/Credentials" element={<Credentials/>} />
    </Routes>
     </Theme>
   );

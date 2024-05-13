@@ -30,14 +30,13 @@ const Navbar = () => {
       <header
         className={`self-stretch ${
             isFixed ? "fixed-top" : "sticky-top"
-          } bg-white-50 flex flex-row items-center justify-center py-5 px-5 box-border z-[99] w-full gap-[20px] text-center text-8xl text-black font-karla mq1125:pl-[60px] mq1125:pr-[60px] mq1125:box-border mq800:pl-[30px] mq800:pr-[30px] mq800:box-border`}
+          }  bg-white-50 flex flex-row h-[82px] w-[1442px] max-w-full items-center justify-center py-[20px] pl-[120px] pr-[120px] box-border z-[99] gap-auto text-center text-8xl text-black font-karla mq1125:pl-[60px] mq1125:pr-[60px] mq1125:box-border mq800:pl-[30px] mq800:pr-[30px] mq800:box-border`}
           style={{
             transition: "fixed-top .10s ease-in",
           }}
       >
-        <Container className="flex justify-between items-center">
+        <Container className="flex justify-between items-center ">
           <div className="flex flex-row items-center justify-center gap-8 max-w-full mq450:gap-[30px] mq800:w-[237px]">
-            {/* gap-[60px] */}
             <Link
               to="/"
               className="flex-1 flex flex-row items-center justify-start gap-[8px]"
@@ -115,7 +114,7 @@ const Navbar = () => {
 
               <Link
                 to="/Login"
-                className="rounded-full bg-green-400 flex flex-row items-center justify-center py-2.5 px-[39.5px] text-left text-base text-green-0 font-manrope"
+                className="rounded-full bg-[#4E7FFF] bg-[100%] flex flex-row items-center justify-center py-2.5 px-[39.5px] text-left text-base text-green-0 font-manrope"
               >
                 <p className="relative inline-block min-w-[41px]">Login</p>
               </Link>

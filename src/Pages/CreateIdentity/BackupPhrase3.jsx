@@ -7,12 +7,12 @@ const BackupPhrase3 = () => {
  const navigate = useNavigate();
 
   const onFrameContainer1Click = useCallback(() => {
-    navigate("/Atte");
+    navigate("/CreateNewPassword");
   }, [navigate]);
   return (
     <div className="">
       <Navbar />
-      <div className="w-[1200px] flex flex-col items-start pt-[43px] justify-start gap-[43px] max-w-full text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
+      <div className="w-[1200px] flex flex-col items-start pt-[43px] justify-start gap-[43px] max-w-full font-manrope text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
         {/* progress line starts */}
         <div className="self-stretch flex flex-col items-start justify-start gap-[43px] max-w-full text-center text-xl text-black font-text mq750:gap-[21px]">
           <div className="w-[1189px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
@@ -119,7 +119,7 @@ const BackupPhrase3 = () => {
             className="rounded-full bg-[#3D6470] text-white flex text-center items-center justify-center py-2.5 px-[54.5px] cursor-pointer border-[1px] border-solid border-[#3D6470] whitespace-nowrap"
             onClick={onFrameContainer1Click}
           >
-            <Link to="/BackupPhrase" className="" target="blanc">
+            <Link to="/CreateNewPassword" className="" target="blanc">
               <p className="relative inline-block min-w-[51px]">Next</p>
             </Link>
           </div>

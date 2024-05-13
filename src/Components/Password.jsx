@@ -18,20 +18,27 @@ const Password = () => {
     navigate("/dashboard");
   }, [navigate]);
 
+  const onFrameContainerClick1 = useCallback(() => {
+    navigate("/Home");
+  }, [navigate]);
+
   return (
     <>
       <div>
         <Navbar />
-        <div className="w-[1200px] flex flex-col items-start justify-start gap-[43px] max-w-full text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
+        <div className="w-[1200px] flex flex-col items-start justify-start gap-[43px] max-w-full font-manrope text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
 
           <div className="w-[1189px] flex flex-row items-start justify-center pt-[43px] pb-0 px-5 box-border max-w-full">
             <div
               className="w-[585px] flex flex-col items-start justify-start pt-0 px-0 pb-10 box-border gap-[60px] max-w-full cursor-pointer mq675:gap-[30px]"
             >
+              {/* progress line starts */}
               <div className="self-stretch h-3 rounded-4xl bg-gainsboro flex flex-row items-start justify-start gap-[56px] max-w-full mq450:gap-[28px]">
                 <div className="self-stretch w-[585px] relative rounded-4xl bg-gainsboro hidden max-w-full" />
                 <div className="self-stretch w-[390px] relative rounded-4xl bg-blue-700 max-w-full z-[1]" />
               </div>
+              {/* progress line ends */}
+              
               <div className="self-stretch flex flex-col items-start justify-start gap-[12px]">
                 <div className="self-stretch flex flex-row items-start justify-center py-0 px-5">
                   <h1 className="m-0 relative text-inherit leading-[47px] font-bold font-inherit mq450:text-4xl mq450:leading-[28px] mq750:text-12xl mq750:leading-[37px]">
@@ -73,10 +80,10 @@ const Password = () => {
 
             <div
               className="rounded-full  flex flex-row items-start justify-start py-2.5 px-[54.5px] cursor-pointer border-[1px] border-solid border-[#3D6470]  whitespace-nowrap"
-              onClick={onFrameContainerClick}
+              onClick={onFrameContainerClick1}
             >
               <Link
-                to="/Login"
+                to="/Home"
                 className=""
                 target="blanc"
               >
