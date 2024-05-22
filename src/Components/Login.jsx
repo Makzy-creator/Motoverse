@@ -1,4 +1,3 @@
-
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -34,25 +33,25 @@ const Login = ({ onClose }) => {
             </div>
             <div className="self-stretch flex flex-row items-start justify-start py-0 pr-12 pl-[48.5px] text-base mq399:pl-5 mq399:pr-5 mq399:box-border">
               <div className="flex-1 relative">
-                Add your identity in order to access our feature and enable to buy
-                and sell vehicles in our marketplace.
+                Add your identity in order to access our feature and enable to
+                buy and sell vehicles in our marketplace.
               </div>
             </div>
           </div>
         </section>
         <section className="self-stretch flex flex-row items-start justify-center py-0 px-5 text-left text-base text-green-0 font-manrope">
-          <div className="flex flex-col items-start justify-start gap-[20px]
-">
+          <div
+            className="flex flex-col items-start justify-start gap-[20px]
+"
+          >
             <div
               className="rounded-full bg-[#3D6470] flex flex-row items-start justify-start py-2.5 px-[50px] whitespace-nowrap cursor-pointer"
               onClick={onFrameContainer1Click}
             >
-              <Link
-                to="/CreateIdentity"
-                className=""
-                target="blanc"
-              >
-                <p className="relative inline-block min-w-[41px]">Create Identity</p>
+              <Link to="/CreateIdentity" className="" target="blanc">
+                <p className="relative inline-block min-w-[41px]">
+                  Create Identity
+                </p>
               </Link>
             </div>
 
@@ -60,22 +59,17 @@ const Login = ({ onClose }) => {
               className="rounded-full flex flex-row items-start justify-start py-2.5 px-[19px] whitespace-nowrap cursor-pointer text-green-900 border-[1px] border-solid border-[#3D6470]"
               onClick={onFrameContainerClick}
             >
-              <Link
-                to="/Home"
-                className=""
-                target="blanc"
-              >
-                <p className="relative inline-block min-w-[41px]">Import Existing Identity</p>
+              <Link to="/Home" className="" target="blanc">
+                <p className="relative inline-block min-w-[41px]">
+                  Import Existing Identity
+                </p>
               </Link>
             </div>
-
           </div>
         </section>
       </div>
     </>
+  );
+};
 
-  )
-}
-
-export default Login
-
+export default Login;

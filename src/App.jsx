@@ -65,6 +65,13 @@ import Credentials1 from "./Pages/VehicleVerifier/Credentials1";
 import Experience from "./Pages/VehicleVerifier/Experience";
 import Reference from "./Pages/VehicleVerifier/Reference";
 import Success from "./Pages/VehicleVerifier/Success";
+import DashNavbar from "./Pages/Dashboard/DashNavbar";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import Header from "./Pages/Dashboard/Header";
+import Sidebar from "./Pages/Dashboard/Sidebar";
+import MyDash from "./Pages/MyDashboard/MyDash";
+import HeaderDash from "./Pages/MyDashboard/HeaderDash";
+import SideBar from "./Pages/MyDashboard/SideBar";
 
 
 function App() {
@@ -107,6 +114,13 @@ function App() {
       <Route path="/Experience" element={<Experience/>} />
       <Route path="/Reference" element={<Reference/>} />
       <Route path="/Success" element={<Success/>} />
+      <Route path="/DashNavbar" element={<DashNavbar/>} />
+      <Route path="/dashboard" element={<Dashboard/>} />
+      <Route path="/Sidebar" element={<Sidebar/>} />
+      <Route path="/Header" element={<Header/>} />
+      <Route path="/MyDash" element={<MyDash/>} />
+      <Route path="/HeaderDash" element={<HeaderDash/>} />
+      <Route path="/SideBar" element={<SideBar/>} />
    </Routes>
     </Theme>
   );

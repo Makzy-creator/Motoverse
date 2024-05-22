@@ -1,9 +1,10 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { DropdownMenu } from "@radix-ui/themes";
 import { Container } from "react-bootstrap";
 
-const Navbar = () => {
+const DashNavbar = () => {
   const [isFixed, setIsFixed] = useState(false);
   // const [isSticky, setIsSticky] = useState(false);
 
@@ -25,14 +26,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
+    <div className="w-[1440px] h-[1431px] max-w-full">
       <header
         className={`self-stretch ${
-          isFixed ? "fixed-top" : "sticky-top"
-        }  bg-white-50 flex flex-row h-[82px] w-[1442px] max-w-full items-center justify-center py-[20px] pl-[120px] pr-[120px] box-border z-[99] gap-auto text-center text-8xl text-black font-karla mq1125:pl-[60px] mq1125:pr-[60px] mq1125:box-border mq800:pl-[30px] mq800:pr-[30px] mq800:box-border`}
-        style={{
-          transition: "fixed-top .10s ease-in",
-        }}
+            isFixed ? "fixed-top" : "sticky-top"
+          }  bg-white-50 flex flex-row h-[102px] w-[1360px] max-w-full items-center justify-center pt-[40px] pb-[20px] mx-[40px] box-border z-[99] gap-auto text-center text-8xl text-black font-karla mq1125:pl-[60px] mq1125:pr-[60px] mq1125:box-border mq800:pl-[30px] mq800:pr-[30px] mq800:box-border border-b-2 border-b-gray-300 box-shadow-[10px 20px 4px]-red `}
+          style={{
+            transition: "fixed-top .10s ease-in",
+          }}
       >
         <Container className="flex justify-between items-center ">
           <div className="flex flex-row items-center justify-center gap-8 max-w-full mq450:gap-[30px] mq800:w-[237px]">
@@ -80,7 +81,7 @@ const Navbar = () => {
                   {" "}
                   <DropdownMenu.Trigger>
                     <button className="relative leading-[130%] inline-flex items-center gap-2 min-w-[72px] outline-none border-none">
-                      Country <DropdownMenu.TriggerIcon />
+                      Mexico <DropdownMenu.TriggerIcon />
                     </button>
                   </DropdownMenu.Trigger>{" "}
                   <DropdownMenu.Content
@@ -125,4 +126,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default DashNavbar;

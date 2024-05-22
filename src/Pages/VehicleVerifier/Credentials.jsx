@@ -16,7 +16,7 @@ const Credentials = () => {
     navigate("/Credentials1");
   }, [navigate]);
   return (
-    <div className="w-[1440px] h-[1024px] max-w-full">
+    <div className="w-[1440px] h-[1024px] max-w-full bg-[#F3F3F6]">
       <Navbar />
       <div className="self-stretch flex flex-col items-center pt-[43px] px-[114px] justify-start max-w-full font-manrope text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
         {/* progress line starts */}

@@ -7,20 +7,18 @@ import Testmonials from "./Testmonials";
 import Team from "./Team";
 import { Link } from "react-router-dom";
 
-
-
-
 const Hero = () => {
   return (
-    <div className="w-full relative bg-white-100 flex flex-col leading-[normal] tracking-[normal]"> 
-     <Navbar />
+    <div className="w-full relative bg-white-100 flex flex-col leading-[normal] tracking-[normal]">
+      <Navbar />
       <section className="overflow-y-scroll scrollbar-none self-stretch bg-[url(/images/Group28.svg)] bg-no-repeat bg-cover bg-contain flex flex-col px-0 pt-0 p-[120px] pb-[300px] box-border relative gap-[81px] max-w-full text-left text-[50px] text-green-200 font-Manrope mq450:gap-[20px] mq1125:pb-[301px] mq1125:box-border mq800:gap-[40px] mq800:pb-[196px] mq800:box-border ">
-      
         <div className="container flex flex-row align-middle items-start justify-start py-0 px-5 box-border max-w-full">
           <div className="w-[607px] flex flex-col items-start justify-start gap-[40px] max-w-full z-[5] mq800:gap-[20px]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[20px] max-w-full">
               <h1 className="m-0 self-stretch relative text-inherit sm:pt-[50px] tracking-[-0.02em] leading-[90%] leading-loose font-medium font-inherit mq450:text-[24px] mq450:leading-[29px] mq800:text-[40px] mq800:leading-[43px]">
-                <span className="block lg:leading-[1.5] leading-tight">Explore a World of </span>
+                <span className="block lg:leading-[1.5] leading-tight">
+                  Explore a World of{" "}
+                </span>
                 <span className="block leading-tight">Cars Safely on the </span>
                 <span className="block leading-tight">Blockchain </span>
               </h1>
@@ -36,7 +34,13 @@ const Hero = () => {
               <b className="relative inline-block min-w-[62px]">Filter by</b>
               <div className="flex-1 shadow-[0px_4px_16px_rgba(0,_0,_0,_0.05)] rounded-5 bg-green-0 flex flex-row items-center justify-between py-2.5 px-s box-border min-w-[270px] max-w-full gap-[20px] text-black font-karla">
                 <div className="relative w-full">
-                  <input type="text" placeholder="search by brand, model, year, etc..." className="h-full w-full outline-none border-none" name="search" id="" />
+                  <input
+                    type="text"
+                    placeholder="search by brand, model, year, etc..."
+                    className="h-full w-full outline-none border-none"
+                    name="search"
+                    id=""
+                  />
                 </div>
                 <img
                   className="cursor-pointer h-6 w-6 relative overflow-hidden shrink-0"
@@ -62,7 +66,8 @@ const Hero = () => {
         />
         <div className="h-[284px] flex flex-col items-start justify-center gap-[20px] min-w-[588px] max-w-full mq1125:min-w-full mq1350:flex-1">
           <h1 className="m-0 self-stretch relative text-inherit leading-[97%] tracking-[0.05em] font-medium font-inherit mq450:text-[38px] mq450:leading-[37px] mq800:text-[51px] mq800:leading-[50px]">
-            {`Join Motoverse's`} <span className="d-block">DAO partnership</span>
+            {`Join Motoverse's`}{" "}
+            <span className="d-block">DAO partnership</span>
           </h1>
           <p className="self-stretch relative text-xl leading-[130%] mq450:text-base mq450:leading-[21px]">
             As a verifier, securely receive your service fee. As a seller, start
@@ -73,7 +78,9 @@ const Hero = () => {
             to="/Login"
             className="rounded-5 bg-green-400 flex flex-row items-center justify-center py-2.5 px-[39.5px] text-left text-base text-green-0 font-manrope"
           >
-            <div className="relative inline-block min-w-[41px]">Create Account</div>
+            <div className="relative inline-block min-w-[41px]">
+              Create Account
+            </div>
           </Link>
         </div>
       </section>
@@ -81,8 +88,7 @@ const Hero = () => {
       <Testmonials />
       <Team />
 
-<footer className="self-stretch bg-green-1000 overflow-hidden flex flex-1 flex-row flex-wrap items-center justify-center p-[120px] box-border max-w-full text-center text-green-100 font-karla mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[78px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border h-[264px] w-[1190px] py-[50px] max-h-full ">
-          
+      <footer className="self-stretch bg-green-1000 overflow-hidden flex flex-1 flex-row flex-wrap items-center justify-center p-[120px] box-border max-w-full text-center text-green-100 font-karla mq450:pl-5 mq450:pr-5 mq450:box-border mq800:gap-[26px] mq800:pt-[78px] mq800:px-[63px] mq800:pb-[78px] mq800:box-border h-[264px] w-[1190px] py-[50px] max-h-full ">
         <div className="flex items-start justify-start">
           <img
             className="w-[160px] h-[160px] relative"
@@ -101,7 +107,6 @@ const Hero = () => {
           </div>
         </div>
       </footer>
-    
     </div>
   );
 };

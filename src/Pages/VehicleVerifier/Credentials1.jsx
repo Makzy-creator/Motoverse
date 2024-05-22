@@ -14,7 +14,7 @@ const Credentials1 = () => {
     navigate("/Experience");
   }, [navigate]);
   return (
-    <div className="w-[1440px] bg-[#F3F3F6] h-[1024px] max-w-full">
+    <div className="w-[1440px]  h-[1024px] bg-[#F3F3F6] bg-100% max-w-full">
       <Navbar />
       <div className="self-stretch flex flex-col items-center pt-[43px] px-[114px]  justify-start max-w-full font-manrope text-center text-20xl text-green-900 font-text mq675:gap-[21px]">
         {/* progress line starts */}
@@ -82,7 +82,7 @@ const Credentials1 = () => {
           </div>
         </section>
       </div>
-      <footer className="self-stretch flex flex-row items-start justify-between mt-[298px] px-[124px] py-[20px] gap-[20px] text-left text-base text-green-900 font-text border-t-[1px] border-solid border-green-200 mq450:pl-5 mq450:pr-5 mq450:box-border mq675:flex-wrap mq675:justify-center mq750:pl-[62px] mq750:pr-[62px] mq750:box-border">
+      <footer className="self-stretch bg-[#F3F3F6] bg-100% flex flex-row items-start justify-between mt-[298px] px-[124px] py-[20px] gap-[20px] text-left text-base text-green-900 font-text border-t-[1px] border-solid border-green-200 mq450:pl-5 mq450:pr-5 mq450:box-border mq675:flex-wrap mq675:justify-center mq750:pl-[62px] mq750:pr-[62px] mq750:box-border">
         <div
           className="rounded-full  flex flex-row items-start justify-start py-2.5 px-[54.5px] cursor-pointer border-[1px] border-solid border-[#3D6470]  whitespace-nowrap"
           onClick={onFrameContainer1Click}
