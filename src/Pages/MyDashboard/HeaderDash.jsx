@@ -3,12 +3,10 @@
 import { Link } from "react-router-dom";
 import { DropdownMenu } from "@radix-ui/themes";
 
-
 const HeaderDash = () => {
   return (
     <div className="">
       <header className="self-stretch bg-[#F3F3F6] shadow-md flex flex-row box-border top-[0] z-[99] sticky max-w-full text-center font-text items-start justify-start pt-10 px-10 pb-5">
-    
         <nav className="flex flex-row items-start space-x-4  mq450:gap-[30px] mq800:w-[237px] justify-between max-w-full gap-[20px]">
           <Link
             to="/"
@@ -35,47 +33,46 @@ const HeaderDash = () => {
         <div className="flex items-center space-x-4 gap-[40px] max-w-full mq750:gap-[20px]">
           <div className="flex flex-row items-center justify-start gap-[8px]">
             <DropdownMenu.Root>
-            {" "}
-            <DropdownMenu.Trigger>
-              <span className="relative inline-flex items-center gap-2 outline-none border-none text-gray-700">
-                Mexico <DropdownMenu.TriggerIcon />
-              </span>
-            </DropdownMenu.Trigger>{" "}
-            <DropdownMenu.Content
-              style={{
-                backgroundColor: "#00000000",
-              }}
-            >
-              <div className="flex flex-col gap-2">hello</div>
-            </DropdownMenu.Content>
-          </DropdownMenu.Root>
+              {" "}
+              <DropdownMenu.Trigger>
+                <span className="relative inline-flex items-center gap-2 outline-none border-none text-gray-700">
+                  Mexico <DropdownMenu.TriggerIcon />
+                </span>
+              </DropdownMenu.Trigger>{" "}
+              <DropdownMenu.Content
+                style={{
+                  backgroundColor: "#00000000",
+                }}
+              >
+                <div className="flex flex-col gap-2">hello</div>
+              </DropdownMenu.Content>
+            </DropdownMenu.Root>
           </div>
-          
+
           <div className="flex flex-row items-center justify-start gap-[8px]">
-             <DropdownMenu.Root>
-            {" "}
-            <DropdownMenu.Trigger>
-              <span className="relative inline-flex items-center gap-2 outline-none border-none text-gray-700">
-                USDC <DropdownMenu.TriggerIcon />
-              </span>
-            </DropdownMenu.Trigger>{" "}
-            <DropdownMenu.Content
-              style={{
-                backgroundColor: "#00000000",
-              }}
-            >
-              <div className="flex flex-col gap-2">hello</div>
-            </DropdownMenu.Content>
-          </DropdownMenu.Root>
+            <DropdownMenu.Root>
+              {" "}
+              <DropdownMenu.Trigger>
+                <span className="relative inline-flex items-center gap-2 outline-none border-none text-gray-700">
+                  USDC <DropdownMenu.TriggerIcon />
+                </span>
+              </DropdownMenu.Trigger>{" "}
+              <DropdownMenu.Content
+                style={{
+                  backgroundColor: "#00000000",
+                }}
+              >
+                <div className="flex flex-col gap-2">hello</div>
+              </DropdownMenu.Content>
+            </DropdownMenu.Root>
           </div>
-         
 
           {/* <div className="flex items-center space-x-2">
 
           </div> */}
           <div className="flex flex-row items-center justify-between space-x-2">
             <div className="flex flex-row gap-[8px] text-gray-700 justify-between items-center">
-               <div className="flex flex-col items-center justify-center m-[10px] box-border w-6 h-6">
+              <div className="flex flex-col items-center justify-center m-[10px] box-border w-6 h-6">
                 <img
                   className="w-5 h-4 relative "
                   loading="lazy"
@@ -95,17 +92,13 @@ const HeaderDash = () => {
               src="/images/dp.svg"
             />
           </div>
-
         </div>
-     
-
       </header>
     </div>
+  );
+};
 
-  )
-}
-
-export default HeaderDash
+export default HeaderDash;
 
 /*
 

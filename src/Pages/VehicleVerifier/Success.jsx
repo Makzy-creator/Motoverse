@@ -7,7 +7,7 @@ const Success = () => {
     const navigate = useNavigate ();
 
     const onFrameContainer1Click = useCallback(() => {
-        navigate("/Dashboard");
+        navigate("/MyDash");
       }, [navigate]);
   return (
     <div>
@@ -39,7 +39,7 @@ const Success = () => {
                 onClick={onFrameContainer1Click}
                 >
                 <Link
-                    to="/Dashboard"
+                    to="/MyDash"
                     className=""
                     target="blanc"
                 >

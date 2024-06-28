@@ -15,7 +15,7 @@ const Login = ({ onClose }) => {
 
   return (
     <>
-      <div className="w-[585px] h-[693px] bg-green-0 rounded-2xl flex flex-col items-center justify-center p-0 px-0 pb-10 box-border gap-[40px] leading-[normal] tracking-[normal]max-w-full max-h-full mq293:gap-[20px] shadow-[10px_10px_14.2px_rgba(0,_0,_0,_0.07)] overflow-hidden">
+      <div className="w-[1440px] h-[1024px] max-w-full flex flex-col items-center justify-center bg-[#F3F3F6] bg-100%">
         <section className="self-stretch flex flex-col items-center justify-center px-5 box-border max-w-full text-center text-20xl text-green-900 font-manrope">
           <div className="w-[400px] gap-[12px] max-w-full">
             <div className="">
